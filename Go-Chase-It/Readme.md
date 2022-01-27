@@ -75,7 +75,9 @@ $ cd /home/workspace/Go-Chase-It/catkin_ws/
 $ source devel/setup.bash
 $ rosrun rqt_image_view rqt_image_view
 ```
-
+<!---
 ### Output
 
 Myrobot inside myworld in Gazebo as well as RViz. The white ball should be located outside the building. Now place the white ball at different positions in front of the robot. The robot should move towards the white ball.
+
+--->
