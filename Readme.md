@@ -35,7 +35,7 @@ Design and build a mobile robot, and house it in a world. Next, program the robo
 - RViz integration
 - rqt_graph for debugging
 
-![](media/Project2/ball_chaser.gif)
+![ball_chaser.gif](media/Project2/ball_chaser.gif)
 
 
 <!---
