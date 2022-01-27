@@ -4,10 +4,11 @@ This repository contains Project done for Nanodegree in Robotics Software Engine
 
 Course Link: [Robotics Software Engineer](www.udacity.com/course/robotics-software-engineer--nd209)
 
-There are a total of 5 projects, 
+There are a total of 5 projects. This repository is currently under development.
+<!--- 
 All media files can be found in the [media]() folder.
 <a name="project1"/>
-
+--->
 ## 1. Project1: Gazebo-World
 
 ### Goal
@@ -35,8 +36,8 @@ Design and build a mobile robot, and house it in a world. Next, program the robo
 - RViz integration
 - rqt_graph for debugging
 
-![ball_chaser.gif](media/Project2/ball_chaser.gif)
-
+<!--- ![ball_chaser.gif](media/Project2/ball_chaser.gif)
+--->
 
 <!---
 <a name="project3"/>
