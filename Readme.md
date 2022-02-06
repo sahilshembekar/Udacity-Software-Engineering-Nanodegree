@@ -55,36 +55,8 @@ Interface the mobile robot with the Adaptive Monte Carlo Localization (AMCL) alg
 - Understanding of tuning of parameters 
 
 ## Demo with Control-Using-2D-Nav-Goal
-![](Media/Project3/Control-Using-2D-Nav-Goal.gif)
+![](Media/Project3/Control-using-2D-Nav-Goal.gif)
 
 ## Demo with Control-using-teleop-keyboard 
 ![](Media/Project3/Control-using-teleop-keyboard.gif)
 
-
-<!--
-<a name="project4"/>
-
-## 4. Project4: Map My World
-
-### Goal
-
-Interface my mobile robot with an RTAB Map ROS package to localize the robot and build 2D and 3D maps of the environment. Properly launch the robot and then teleop it to map its environment.
-
-### What I learned
-- SLAM implementation with ROS/Gazebo
-- ROS debugging tools: rqt, roswtf
-
-<a name="project5"/>
-
-## 5. Project5: Home Service Robot
-
-### Goal
-
-Use a SLAM package to autonomously map an environment and interface robot with a path planning and navigation ROS package to move objects within an environment.
-
-### What I learned
-- Advanced ROS and Gazebo Integration
-- ROS Navigation stack 7
-- Path Planning
-
---->
