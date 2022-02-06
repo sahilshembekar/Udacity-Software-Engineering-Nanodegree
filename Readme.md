@@ -37,7 +37,7 @@ Design and build a mobile robot, and house it in a world. Next, program the robo
 - rqt_graph for debugging
 
 ## Demo
-![](Media/Project2/ball_chaser.gif)
+![](Media/Project2/ball_chaser_new.gif)
 
 <!---
 <a name="project3"/> -->
