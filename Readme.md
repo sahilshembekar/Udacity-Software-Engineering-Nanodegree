@@ -36,7 +36,8 @@ Design and build a mobile robot, and house it in a world. Next, program the robo
 - RViz integration
 - rqt_graph for debugging
 
-![](media/Project2/ball_chaser.gif)
+## Demo
+![](Media/Project2/ball_chaser.gif)
 
 <!---
 <a name="project3"/> -->
@@ -53,9 +54,14 @@ Interface the mobile robot with the Adaptive Monte Carlo Localization (AMCL) alg
 - Using move_base node package
 - Understanding of tuning of parameters 
 
-Control-Using-2D-Nav-Goal             |  Control-using-teleop-keyboard
-:-------------------------:|:-------------------------:
-![](Media/Project3/Control-Using-2D-Nav-Goal.gif)  |  ![](Media/Project3/Control-using-teleop-keyboard.gif)
+## Demo with Control-Using-2D-Nav-Goal
+
+
+![](Media/Project3/Control-Using-2D-Nav-Goal.gif)
+
+## Demo with Control-using-teleop-keyboard 
+
+![](Media/Project3/Control-using-teleop-keyboard.gif)
 
 
 <!--

@@ -41,5 +41,5 @@ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 Now, you can control my robot by keyboard commands.
 
-### Output
+### Result
 ![images](./images/Screenshot-of-Localization-in-Rviz.png)
