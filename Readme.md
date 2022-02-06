@@ -36,22 +36,28 @@ Design and build a mobile robot, and house it in a world. Next, program the robo
 - RViz integration
 - rqt_graph for debugging
 
-<!--- ![ball_chaser.gif](media/Project2/ball_chaser.gif)
---->
+![](media/Project2/ball_chaser.gif)
 
 <!---
-<a name="project3"/>
+<a name="project3"/> -->
 
 ## 3. Project3: Where Am I?
 
 ### Goal
 
-Interface my mobile robot with the Adaptive Monte Carlo Localization algorithm in ROS to estimate my robot's position as it travels through a predefined set of waypoints, and tune different parameters to increase the localization efficiency of the robot.
+Interface the mobile robot with the Adaptive Monte Carlo Localization (AMCL) algorithm in ROS to estimatethe robot's position as it travels through a predefined set of waypoints, and tune different parameters to increase the localization efficiency of the robot.
 
 ### What I learned
 - Implementation of Adaptive Monte Carlo Localization in ROS
-- Understanding of tuning parameters required
+- How to generate a map using pgm_map_creator
+- Using move_base node package
+- Understanding of tuning of parameters 
+Control-Using-2D-Nav-Goa             |  Control-using-teleop-keyboard
+:-------------------------:|:-------------------------:
+![](media/Project3/Control-Using-2D-Nav-Goal.gif)  |  ![](media/Project3/Control-using-teleop-keyboard.gif)
 
+
+<!--
 <a name="project4"/>
 
 ## 4. Project4: Map My World

@@ -1,0 +1,92 @@
+<launch>
+	<!-- contains comment for reference purposes-->
+
+	<!-- map_server  -->
+	<!-- Node which provides map data as a ROS service to other nodes e.g. AMCL node 
+  		It will locate the map in map setup step & send it out as map data -->
+	<!-- Argument of the path to map file. To easily change the map loaded and avoid typing paths again -->
+	
+	<arg name="map_file" default="$(find my_robot)/maps/map.yaml"/>
+	<node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+	<!-- amcl  -->
+    	<node name="amcl" pkg="amcl" type="amcl" output="screen">
+
+	<!--By default, amcl package looks for the scan topic for LiDAR data. Hokuyo LiDAR sensor used by us actually publishes on my_robot/laser/scan topic. Use the remap tag to remap the topic name scan to the actual topic name for the amcl package to use -->
+
+	<remap from="scan" to="/scan"/> 
+	
+	<!-- amcl parameters  -->
+
+
+	<!-- Define initial pose /Part of overall filter parameters -->
+	<param name="initial_pose_x" value="0"/>
+	<param name="initial_pose_y" value="0"/>
+ 	<param name="initial_pose_a" value="-1.57" /> <!-- Rotation is important for Rviz to match in Gazebo  -->
+	
+
+	<!-- Overall filter --> 
+	<!-- Range is tuned based on system specs. Larger range, with a high max is computationally extensive for a low end system -->
+	
+	<param name="min_particles" value="100" />
+	<param name="max_particles" value="2000" />
+
+	<!-- After receiving a laser scan data, check the values for update_min_a & update_min_d.This compares to how far the robot has moved. Based on this comparison it decides whether or not to perform a 		filter update or to discard the scan data. -->	
+	<!-- Discarding data could result in poorer localization results, and too many frequent filter updates for a fast moving robot could also cause computational problems -->
+
+     	<param name="update_min_a" value="0.01"/>
+    	<param name="update_min_d" value="0.01"/>
+	
+
+
+    	<!-- Laser -->
+    	<!-- Out of likelihood_field and beams, we choose likelihood_field because more computationally efficient and reliable for our environment -->
+	<!-- Tuning is purely experimental. Need to make sure that laser scan matches/aligned with the actual map and how it gets updated as the robot moves -->
+	<!-- Better the estimation of where the obstacles are, the better the localization results -->
+  <!--  	
+	<param name = "laser_max_beams" value = "25"/>
+    	<param name = "laser_z_hit" value = "0.80"/>
+    	<param name = "laser_z_rand" value = "0.03"/>
+-->
+
+	<!-- Odom Parameters -->
+	<!-- Because we are using differential drive mobile robot hence we use diff-corrected type -->
+	<param name="odom_frame_id" value="odom"/>
+	<param name="odom_model_type" value="diff-corrected"/>
+	<param name="base_frame_id" value="robot_footprint"/>
+	<param name="global_frame_id" value="map"/>
+
+	<!-- Additional parameters like odom)alphas (1 to 4). These define how much node to expect from the robot's movement/motions as it navigates inside the map -->
+
+<!--
+    	<param name="odom_alpha1" value="0.05"/>
+    	<param name="odom_alpha2" value="0.05"/>
+    	<param name="odom_alpha3" value="0.05"/>
+    	<param name="odom_alpha4" value="0.05"/>
+-->	
+</node>
+
+
+  	<!-- Move Base -->
+	<!--  A navigation goal position for robot in the map, and the robot will navigate to that goal position. Uses a costmap where map is divided into 2 parts- occupied & unoccupied. As robot moves, local costmap is continuously updated in relation to a global costmap. This defines a continuous path for the robot to move along. Works like obstacle avoidance algo and finds a clear path  -->
+  	<node name="move_base" pkg="move_base" type="move_base" respawn="false" output="screen">
+
+	<remap from="scan" to="/scan"/>
+
+	<!-- move_base parameters -->
+	<param name="base_global_planner" value="navfn/NavfnROS" />
+  	<param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS"/>
+
+	<!-- Below parameters loaded feom config folder -->
+	<rosparam file="$(find my_robot)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+	<rosparam file="$(find my_robot)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+	<rosparam file="$(find my_robot)/config/local_costmap_params.yaml" command="load" />
+	<rosparam file="$(find my_robot)/config/global_costmap_params.yaml" command="load" />
+	<rosparam file="$(find my_robot)/config/base_local_planner_params.yaml" command="load" />
+	</node>
+
+  <!--launch localization rviz file -->
+
+ <node type="rviz" name="rviz" pkg="rviz" args="-d $(find my_robot)/rviz/localization.rviz" /> 
+
+</launch>
