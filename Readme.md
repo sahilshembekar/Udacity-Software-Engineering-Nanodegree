@@ -54,7 +54,7 @@ Interface the mobile robot with the Adaptive Monte Carlo Localization (AMCL) alg
 - Understanding of tuning of parameters 
 Control-Using-2D-Nav-Goa             |  Control-using-teleop-keyboard
 :-------------------------:|:-------------------------:
-![](media/Project3/Control-Using-2D-Nav-Goal.gif)  |  ![](media/Project3/Control-using-teleop-keyboard.gif)
+![](Media/Project3/Control-Using-2D-Nav-Goal.gif)  |  ![](Media/Project3/Control-using-teleop-keyboard.gif)
 
 
 <!--
