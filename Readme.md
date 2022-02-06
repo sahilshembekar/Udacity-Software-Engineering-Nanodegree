@@ -56,7 +56,7 @@ Interface the mobile robot with the Adaptive Monte Carlo Localization (AMCL) alg
 
 ## Demo with Control-Using-2D-Nav-Goal
 
-![](Media/Project3/Control-Using-2D-Nav-Goal.gif)
+![Test](Media/Project3/Control-Using-2D-Nav-Goal.gif)
 
 ## Demo with Control-using-teleop-keyboard 
 
