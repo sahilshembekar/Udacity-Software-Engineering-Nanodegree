@@ -52,7 +52,8 @@ Interface the mobile robot with the Adaptive Monte Carlo Localization (AMCL) alg
 - How to generate a map using pgm_map_creator
 - Using move_base node package
 - Understanding of tuning of parameters 
-Control-Using-2D-Nav-Goa             |  Control-using-teleop-keyboard
+
+Control-Using-2D-Nav-Goal             |  Control-using-teleop-keyboard
 :-------------------------:|:-------------------------:
 ![](Media/Project3/Control-Using-2D-Nav-Goal.gif)  |  ![](Media/Project3/Control-using-teleop-keyboard.gif)
 
