@@ -55,7 +55,7 @@ $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 7. Click on this terminal, type keyboard to navigate the robot around. Navigate 
 the robot to scan its surrounding environment. The rtabmap-ros package will save
 the resulted map with the localized trajectory of the robot in a database file 
-`~/.ros/rtabmap.db`.
+`~/catkin_ws/src/my_robot/database/rtabmap.db`.
 
 8. Open another terminal, and open up the database file using `rtabmap-databaseViewer`
 ```
@@ -67,3 +67,4 @@ $ rtabmap-databaseViewer ~/catkin_ws/src/my_robot/database/rtabmap.db
     
 You could also open the database I already generated in this project.
 It is located in ``` /catkin_ws/src/my_robot/database/rtabmap.db ```
+If it fails to open download it from [here](https://drive.google.com/drive/folders/1Vpzfy-rB2hrRuEgnxqtSxlwtfyOIl82V?usp=sharing)
