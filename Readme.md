@@ -59,7 +59,7 @@ Interface the mobile robot with the Adaptive Monte Carlo Localization (AMCL) alg
 ## Demo with Control-using-teleop-keyboard 
 ![](Media/Project3/Control-using-teleop-keyboard.gif)
 
-## 4. Project4: Map My World?
+## 4. Project4: Map My World
 
 ### Goal
 
