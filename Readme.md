@@ -19,7 +19,6 @@ Design a Gazebo World environment including multiple models and use it as a base
 - Launching a Gazebo Environment
 - Designing in Gazebo
 
-<a name="project2"/>
 
 ## 2. Project2: Go Chase It
 
@@ -60,3 +59,47 @@ Interface the mobile robot with the Adaptive Monte Carlo Localization (AMCL) alg
 ## Demo with Control-using-teleop-keyboard 
 ![](Media/Project3/Control-using-teleop-keyboard.gif)
 
+## 4. Project4: Map My World?
+
+### Goal
+
+An application of [rtabmap-ros](http://wiki.ros.org/rtabmap_ros) package for simultaneous localization and mapping (SLAM) of a mobile robot. 
+This project assumes known robot pose to map an environment. The robot uses camera data to recognize previously visited regions in the map using a graph-based SLAM approach known as Real-Time Appearance Based (RTAB) mapping (under the hood, bag-of-words is used for detecting loop closures). More information on this can be found [here](http://introlab.github.io/rtabmap/).
+
+### What I learned
+- Implementation of SLAM in ROS
+- How to use rtabmap_ros package to generate database
+- To view a database file using ` rtabmap-databaseViewer `
+
+##
+
+<table style="width:100%">
+  <tr>
+    <th><p>
+           <img src="Media/Project4/World.jpg"
+            alt="3D map" width="400" height="200"></a>
+           <br>World 
+        </p>
+    </th>
+    <th><p>
+           <img src="Media/Project4/2dmap.png"
+            alt="2D map" width="200" height="200"></a>
+           <br>2D Map
+      </p>
+    </th>
+  </tr>
+  <tr>
+    <th><p>
+           <img src="Media/Project4/Occupancy-grid-map.png"
+            alt="occupancy grid" width="400" height="200"></a>
+           <br>Occupancy Grid
+      </p>
+    </th>
+    <th><p>
+           <img src="Media/Project4/Detected-Features.png"
+            alt="features" width="200" height="200"></a>
+           <br>Detected Features
+      </p>
+    </th>
+  </tr>
+</table>
