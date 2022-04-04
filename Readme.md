@@ -9,7 +9,7 @@ There are a total of 5 projects. This repository is currently under development.
 All media files can be found in the [media]() folder.
 <a name="project1"/>
 --->
-## 1. Project 1: Gazebo-World
+## 1. Project 1: Build My World
 
 ### Goal
 
@@ -53,10 +53,10 @@ Interface the mobile robot with the Adaptive Monte Carlo Localization (AMCL) alg
 - Using move_base node package
 - Understanding of tuning of parameters 
 
-## Demo with Control-Using-2D-Nav-Goal
+## Demo with Control using the 2D Nav Goal
 ![](Media/Project3/Control-using-2D-Nav-Goal.gif)
 
-## Demo with Control-using-teleop-keyboard 
+## Demo with Control using the teleop keyboard 
 ![](Media/Project3/Control-using-teleop-keyboard.gif)
 
 ## 4. Project 4: Map My World
