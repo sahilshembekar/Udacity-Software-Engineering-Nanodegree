@@ -9,7 +9,7 @@ There are a total of 5 projects. This repository is currently under development.
 All media files can be found in the [media]() folder.
 <a name="project1"/>
 --->
-## 1. Project 1: Build My World
+## Project 1: Build My World
 
 ### Goal
 
@@ -20,7 +20,7 @@ Design a Gazebo World environment including multiple models and use it as a base
 - Designing in Gazebo
 
 
-## 2. Project 2: Go Chase It
+## Project 2: Go Chase It
 
 ### Goal
 
@@ -41,7 +41,7 @@ Design and build a mobile robot, and house it in a world. Next, program the robo
 <!---
 <a name="project3"/> -->
 
-## 3. Project 3: Where Am I?
+## Project 3: Where Am I?
 
 ### Goal
 
@@ -59,7 +59,7 @@ Interface the mobile robot with the Adaptive Monte Carlo Localization (AMCL) alg
 ## Demo with Control using the teleop keyboard 
 ![](Media/Project3/Control-using-teleop-keyboard.gif)
 
-## 4. Project 4: Map My World
+## Project 4: Map My World
 
 ### Goal
 
