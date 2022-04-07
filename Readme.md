@@ -113,4 +113,4 @@ Use a SLAM package to autonomously map an environment and interface robot with a
 - SLAM algorithms
 
 ## Demo
-![](Media/Project5/home-service-robot.mp4)
+![](Media/Project5/home-service-robot.gif)
