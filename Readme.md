@@ -4,12 +4,9 @@ This repository contains Project done for Nanodegree in Robotics Software Engine
 
 Course Link: [Robotics Software Engineer](www.udacity.com/course/robotics-software-engineer--nd209)
 
-There are a total of 5 projects. This repository is currently under development.
-<!--- 
-All media files can be found in the [media]() folder.
-<a name="project1"/>
---->
-## Project 1: Build My World
+There are a total of 5 projects.
+
+## Project1: Build My World
 
 ### Goal
 
@@ -19,8 +16,7 @@ Design a Gazebo World environment including multiple models and use it as a base
 - Launching a Gazebo Environment
 - Designing in Gazebo
 
-
-## Project 2: Go Chase It
+## Project2: Go Chase It
 
 ### Goal
 
@@ -38,8 +34,6 @@ Design and build a mobile robot, and house it in a world. Next, program the robo
 ## Demo
 ![](Media/Project2/ball_chaser_new.gif)
 
-<!---
-<a name="project3"/> -->
 
 ## Project 3: Where Am I?
 
@@ -103,3 +97,20 @@ This project assumes known robot pose to map an environment. The robot uses came
     </th>
   </tr>
 </table>
+
+
+## Project5: Home Service Robot
+
+### Goal
+
+Use a SLAM package to autonomously map an environment and interface robot with a path planning and navigation ROS package to move objects within an environment.
+
+### What I learned
+- Advanced ROS and Gazebo Integration
+- ROS Navigation stack 7
+- Path Planning
+- Shell Scripting
+- SLAM algorithms
+
+## Demo
+![](Media/Project5/home-service-robot.mp4)
