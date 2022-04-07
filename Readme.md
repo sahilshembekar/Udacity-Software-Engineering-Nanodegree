@@ -6,7 +6,7 @@ Course Link: [Robotics Software Engineer](www.udacity.com/course/robotics-softwa
 
 There are a total of 5 projects.
 
-## Project1: Build My World
+## Project 1: Build My World
 
 ### Goal
 
@@ -16,7 +16,7 @@ Design a Gazebo World environment including multiple models and use it as a base
 - Launching a Gazebo Environment
 - Designing in Gazebo
 
-## Project2: Go Chase It
+## Project 2: Go Chase It
 
 ### Goal
 
