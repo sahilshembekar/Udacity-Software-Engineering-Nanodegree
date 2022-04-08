@@ -1,0 +1,6 @@
+<!--
+  Used for visualising the turtlebot for pick and drop alomg with markers.
+ -->
+<launch>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find add_markers)/rviz/home_service_robot.rviz"/>
+</launch>
