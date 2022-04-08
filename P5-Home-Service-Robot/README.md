@@ -4,7 +4,6 @@
 Program a robot that can autonomously map an environment and navigate to pick up and drop virtual objects.
 This is where all the previous projects come together. `gmapping` is used to create a map in which the turtlebot traverses from the starting point to the drop-off point via the pick-up waypoint. The object is represented by a Red marker.
 
-
 ### Directory Structure
 
 ```
@@ -55,13 +54,13 @@ With `turtlebot_world.launch` to deploy a turtlebot in a gazebo environment by l
 
 ## Scripts
 - Shell scripts  
-To automate launching of ros commands via command lines instead of using roslaunch or roscore. Located in **scripts** folder.
+To automate launching of ros commands via command lines instead of using roslaunch or roscore. Located in the **scripts** folder.
 
 ## Configuration Files
 - `map.pgm`, `map.yaml`  
-Both files are required to provide a map for amcl, located in the **map** folder.
+Both files are required to provide a map for amcl and are located in the **map** folder.
 - `Office.world`  
-World file to setup the environment in Gazebo, located in the **map** folder.
+World file to setup the environment in Gazebo is located in the **map** folder.
 
 #### Total of 5 scripts for the demo of 5 different tests.
 1. **`launch.sh`**  
@@ -100,6 +99,5 @@ $ cd ~/catkin_ws/src/scripts
 $ chmod +x home_service.sh
 $ ./home_service.sh
 ```
-
 ### Output
 Gazebo should launch the environment that has turtlebot inside the world. Then RViz should map the environment around the turtlebot. The marker should be appear near the pick up location. The robot should start moving towards the marker and once the robot reaches the pick-up location where the marker is, the marker should be "picked up" by the robot. The robot should then move to the drop-off location and "drop off" the marker.
